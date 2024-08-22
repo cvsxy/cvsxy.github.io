@@ -1,0 +1,4 @@
+
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;overflow-x:hidden}header{position:fixed;top:0;width:100%;z-index:1000}nav ul{list-style:none;display:flex;justify-content:space-between;padding:20px;width:90%;margin:0 auto}nav ul li{flex:1;text-align:center}nav ul li a{text-decoration:none;color:black;font-size:18px}footer{position:fixed;bottom:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:10px}.footer-left{padding-left:20px}footer p{marg...
+
+.scrolling-content{display:inline-block;white-space:nowrap;animation:scroll 120s linear infinite}@keyframes scroll{0%{transform:translateX(100%)}100%{transform:translateX(-100%)}} /* Slowed down scrolling text */
