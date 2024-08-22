@@ -91,7 +91,7 @@ footer a {
     width: 100%;
     text-align: center;
     font-size: 8vw;
-    color: red; /* Set the scrolling text to red */
+    color: red;
     white-space: nowrap;
     overflow: hidden;
     z-index: 500;
@@ -100,7 +100,7 @@ footer a {
 .scrolling-content {
     display: inline-block;
     white-space: nowrap;
-    animation: scroll 120s linear infinite; /* Slowed down scrolling text */
+    animation: scroll 120s linear infinite;
 }
 
 @keyframes scroll {
@@ -127,36 +127,31 @@ footer a {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease;
 }
 
-.image-grid img[loading="lazy"] {
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.image-grid img[loading=“lazy”] {
+opacity: 0;
+transition: opacity 0.3s ease;
 }
 
-.image-grid img[loading="lazy"].loaded {
-    opacity: 1;
-}
-
-.image:hover img {
-    transform: scale(1.05);
+.image-grid img[loading=“lazy”].loaded {
+opacity: 1;
 }
 
 @media (max-width: 1200px) {
-    .image-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
+.image-grid {
+grid-template-columns: repeat(4, 1fr);
+}
 }
 
 @media (max-width: 900px) {
-    .image-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.image-grid {
+grid-template-columns: repeat(3, 1fr);
+}
 }
 
 @media (max-width: 600px) {
-    .image-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.image-grid {
+grid-template-columns: repeat(2, 1fr);
+}
 }
